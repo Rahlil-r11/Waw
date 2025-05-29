@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
         :root{
             --main-color: #025bff;
             --secondary-color: rgba(0, 7, 144, 0.586);
             --tertiary-color: rgb(96, 0, 0);
+            --my-color: rgb(33, 44, 255);
         }
         .ovh{
             overflow: hidden;
@@ -64,12 +69,17 @@
         }
         .header-title{
             gap: 10px;
+            font-weight: 400;
             /* margin-bottom: 580px; */
             /* margin-left: -50px; */
         }
+        .header-title h2{
+  
+            font-family: "Rubik Puddles", system-ui;      
+        }
         .header-title img{
             height: 50px;
-            margin-bottom: 5px;
+            margin-bottom: 1px;
             border-radius: 50%;
         }
         .header-left{
@@ -77,6 +87,7 @@
         }
         .header-left nav ul{
             gap: 50px;
+            font-family: "Fontdiner Swanky", serif;
         }
         .header-right a{
             padding: 8px 20px;
@@ -85,6 +96,7 @@
             letter-spacing: 1px;
             word-spacing: 5px;
             transition: 1s;
+            /* font-family: "WDXL Lubrifont TC", sans-serIf; */
         }
         .header-right a:hover{
             background-color: var(--tertiary-color);
@@ -96,16 +108,167 @@
         .hero-content main{
             width: 60%;
             height: 100%;
+            font-family: "WDXL Lubrifont TC", sans-serif;
         }
         .hero-content aside{
             width: 50%;
-            height: 100%;            
+            height: 100%; 
+                       
         }
         .hero-content aside img{
             width: 500px;
             height: 500px;
-            margin-top: 120px;
+            margin-bottom: -55px;
         }
+        .buttons{
+            margin-top: 25px;
+            gap: 45px;
+        }
+        .buttons .contact{
+            background-color: var(--my-color);
+        }
+        .buttons .project{
+            background-color: var(--my-color);
+        }
+        .buttons a{
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 3px solid white;
+            letter-spacing: 2px;
+            transition: .4s;
+        }
+        .buttons a:hover{
+            background-color: var(--tertiary-color);
+            color: white;
+        }
+        .socials{
+            margin-top: 20px;
+            gap: 30px;
+        }
+        .socials a{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: .7s;
+            border: 2px solid var(--my-color);
+        }
+        .socials a:hover{
+            background-color: var(--my-color);
+            color: white;
+        }
+        .scrollup{
+            position: fixed;
+            bottom: 2rem;
+            right: 1rem;
+            padding: 10px;
+            background-color: var(--secondary-color);
+            border-radius: .25rem;
+            color: white;
+            font-size: .5rem;
+            transition: .4s;
+        }
+        .scrollup:hover{
+            transform: translateY(-1rem);
+        }
+        @media screen and (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content main,
+    .hero-content aside {
+        width: 100%;
+    }
+
+    .hero-content aside img {
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .header-left {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .header-left nav ul {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .content-wrap {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-box {
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .hero-content main h1, 
+    .hero-content main h2 {
+        font-size: 1.2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .socials {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-left nav {
+        display: none; /* sembunyikan menu di mobile */
+    }
+
+    .header-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-title img {
+        height: 40px;
+    }
+
+    .hero-content aside img {
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .buttons a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .socials a {
+        width: 35px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+
+    .content-wrap {
+        padding: 10px 20px;
+    }
+
+    .header-title h2 {
+        font-size: 1.2rem;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -135,13 +298,37 @@
                     <main class="flex fdc jcc">
                         <h2>Hi, I'm Cold Palmer</h2>
                         <h1>football player In Chelsea F.C.</h1>
+                        <div class="buttons flex">
+                            <a href="" class="flex projects">Projects</a>
+                            <a href="" class="flex content">Contact</a>
+                        </div>
+                        <div class="socials flex">
+                            <a href="" class="flex jcc aic">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="" class="flex jcc aic">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="" class="flex jcc aic">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="" class="flex jcc aic">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
                     </main>
                     <aside class="flex aic jcc ovh">
                         <img src="./palmer.png" alt="">
                     </aside>
                 </div>
             </div>
-        </div>        
+        </div>   
+             
     </section>
+    <section id="work"></section>
+    <section id="contact"></section>
+    <a href="" class="scrollup" id="scrullup">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 </body>
 </html>
