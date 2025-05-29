@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color: #025bff;
+            --secondary-color: rgba(0, 7, 144, 0.586);
+            --tertiary-color: rgb(96, 0, 0);
+        }
+        .ovh{
+            overflow: hidden;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .fdc{
+            flex-direction: column;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        ul{
+            list-style: none;   
+        }
+        .flex{
+            display: flex;
+        }
+        .grid{
+            display: grid;
+        }
+        .aic{
+            align-items: center;
+        }
+        .jcc{
+            justify-content: center;
+        }
+        .jcsb{
+            justify-content: space-between;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+        }
+        #hero{
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);        }
+        .section-box{
+            width: 95%;
+            height: 85vh;
+            background-color: var(--main-color);
+            border-radius: 50PX;
+        }
+        .content-wrap{
+            padding: 20px 80px 0 80px; /*trueble/ top,right,bottom,left  */
+            width: 100%;
+            height: 100%;
+            /* background-color: aliceblue; */
+            
+        }
+        .header-title{
+            gap: 10px;
+            /* margin-bottom: 580px; */
+            /* margin-left: -50px; */
+        }
+        .header-title img{
+            height: 50px;
+            margin-bottom: 5px;
+            border-radius: 50%;
+        }
+        .header-left{
+            gap: 70px;
+        }
+        .header-left nav ul{
+            gap: 50px;
+        }
+        .header-right a{
+            padding: 8px 20px;
+            background-color: var(--secondary-color);
+            border-radius: 40px;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            transition: 1s;
+        }
+        .header-right a:hover{
+            background-color: var(--tertiary-color);
+            color: rgb(140, 1, 1);
+        }
+        .hero-content{
+            height: 100%;
+        }
+        .hero-content main{
+            width: 60%;
+            height: 100%;
+        }
+        .hero-content aside{
+            width: 50%;
+            height: 100%;            
+        }
+        .hero-content aside img{
+            width: 500px;
+            height: 500px;
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex jcc aic" id="hero">
+        <div class="section-box flex">
+            <div class="content-wrap flex fdc">
+                <header class="flex jcsb aic">
+                    <div class="header-left flex aic">
+                        <a href="" class="header-title flex aic">
+                            <img src="./bul bul bulll.gif" alt="">
+                            <h2>Palmer</h2>
+                        </a>
+                        <nav class="flex ">
+                            <ul class="flex">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Work</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-right flex">
+                        <a href="">Let's Talk</a>
+                    </div>
+                </header>
+                <div class="hero-content flex ovh">
+                    <main class="flex fdc jcc">
+                        <h2>Hi, I'm Cold Palmer</h2>
+                        <h1>football player In Chelsea F.C.</h1>
+                    </main>
+                    <aside class="flex aic jcc ovh">
+                        <img src="./palmer.png" alt="">
+                    </aside>
+                </div>
+            </div>
+        </div>        
+    </section>
+</body>
+</html>
