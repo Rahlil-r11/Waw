@@ -38,6 +38,7 @@
             display: flex;
         }
         .grid{
+            /* grid-template-columns: repeat(3, 1fr); */
             display: grid;
         }
         .aic{
@@ -176,23 +177,23 @@
         }
         section{
             padding-top: 30px;
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);        
         }
         .section_title, 
         .section_detail{
             text-align: center;
         }
         .work_section{
-            background: #bc54bf;
-            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);        }
-        .my_work{
-            background: #33ab00;
-            background: linear-gradient(90deg, rgba(51, 171, 0, 1) 4%, rgba(255, 0, 0, 1) 42%);
+            grid-template-columns: repeat(3, 1fr);
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);        
+        }
+            .my_work{
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);        
         }
         .work_container{
             justify-content: center;
-            background: #bc54bf;
-            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);        }
-        .work_card{
+        }
+            .work_card{
             background-color: aqua;
             border-radius: 30px;
             overflow: hidden;
@@ -229,12 +230,10 @@
             bottom: 0;
         }
         .about_section{
-            background: #bc54bf;
-            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);        
         }
         .contact_section{
-            background: #bc54bf;
-            background: linear-gradient(90deg, rgba(188, 84, 191, 1) 2%, rgba(39, 214, 191, 1) 5%, rgba(79, 110, 168, 1) 10%, rgba(138, 227, 100, 1) 17%, rgba(131, 255, 64, 1) 22%, rgba(86, 247, 17, 1) 26%, rgba(141, 181, 121, 1) 30%, rgba(0, 171, 43, 1) 34%, rgba(202, 252, 218, 1) 39%, rgba(43, 129, 135, 1) 44%, rgba(171, 51, 0, 1) 52%, rgba(0, 14, 171, 1) 60%, rgba(0, 171, 168, 1) 67%, rgba(0, 171, 140, 1) 76%, rgba(56, 10, 77, 1) 83%, rgba(92, 8, 63, 1) 90%, rgba(255, 0, 0, 1) 94%);
+            background: linear-gradient(90deg,rgba(21, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 28%, rgba(0, 61, 99, 1) 68%, rgba(0, 212, 255, 1) 100%);                    
         }
         @media screen and (max-width: 1024px) {
     .hero-content {
@@ -328,6 +327,68 @@
     .header-title h2 {
         font-size: 1.2rem;
     }
+                .container{
+                background-color: rgb(133, 128, 128);
+                margin: 0;
+            }
+            header{
+                margin-block: 0;
+                padding-block: 0;
+            }
+            .header_title{
+                font-size: 20px;
+                margin-block: 5px;
+                margin-inline: 10px;
+            }
+            .header_navigation{
+                display: none;
+            }
+            .header .fa-bars{
+                display: block;
+                font-size: 30px;
+            }
+            .wrapper{
+                flex-direction: column;
+            }
+            .wrapper aside{
+                width: 100%;
+            }
+            .wrapper aside img{
+                /* height: 200px;   */
+                height: clamp(200px,50vw,300px);
+            }
+            .wrapper main{
+                /* display: flex;
+                align-items: center; */
+                width: 100%;
+            }
+            .wrapper main h1{
+                /* font-size: 25px; */
+                text-align: center;
+                /* margin-block: 0; */
+                margin-top: 0px;
+                margin-bottom: 10px;
+                line-height: 1.5;
+                margin-right: 50%;
+            }
+            .wrapper main p{
+                text-align: center;
+                /* margin-block: 0; */
+                margin-top: 0;
+                margin-bottom: 15px;
+                font-size: 15px;
+                margin-right: 50%;
+            }
+            .wrapper main .buttons{
+                margin-block: 0;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+                margin-right: 50%;
+            }
+            .buttons .hire_me{
+                margin-right: 25px;
+            }
 }
 
     </style>
